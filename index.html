@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="indexfile.js"></script>
+</head>
+
+<body>
+    <div class="bodycontainer">
+        <!--navbar-->
+        <div class="navbar">
+            <div><img class="mainlogo" src="logo.png" alt="logo" /></div>
+            <nav>
+                <ul>
+                    <li class="list hideInMobile">Cryptocurrencies</li>
+                    <li class="list hideInMobile">Exchanges</li>
+                    <li class="list hideInMobile">Community</li>
+                    <li class="list hideInMobile">Trades</li>
+
+                </ul>
+                <ul class="sidebar">
+                    <li onclick="hidesidebar()" class="list"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                            viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></li>
+                    <li class="list">Cryptocurrencies</li>
+                    <li class="list ">Exchanges</li>
+                    <li class="list ">Community</li>
+                    <li class="list">Trades</li>
+                </ul>
+            </nav>
+            <div class="searchGroup">
+                <img src="search.png" alt="search icon">
+                <li onclick="showsidebar()" class="menu"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 -960 960 960" width="24">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></li>
+            </div>
+
+        </div>
+
+        <!--main body starts here-->
+        <div class="statsSection">
+            <div class="headingsGroup ">
+                <h3>Today's Cryptocurrency Prices By Market Cap</h3><br>
+                <h3>The global cryptocurrency market cap today is <span style="color:#14FF00">$811.7B</span>, a <span
+                        style="color:#FF0000">0.17%</span> decrease in the last 24 hours.</h3>
+            </div>
+            <!--stats table-->
+            <br><br>
+            <div class="statstable">
+                <table border="0">
+                  <tr>
+                    <th class="nameHeading">Name</th>
+                    <th>Price</th>
+                    <th>24h Change</th>
+                    <th>Chart</th>
+                    <th>Marketcap</th>
+                  </tr>
+                  <tbody id="content">
+
+                  </tbody>
+                </table>
+              </div>
+        </div>
+
+        <div class="buttondiv">
+            <button>View All</button>
+        </div>
+
+
+        <!--map-->
+        <div class="mapcontainer">
+            <div style="width:100%">
+                <img src="map.png">
+            </div>
+            <div class="mapText">
+                <h1>We are the most trusted <br>Cryptocurrency Platform</h1>
+                <h4 class="maptext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate libero et
+                    velit interdum, ac aliquet odio mattis.</h4>
+                <div class="mapPoints">
+                    <div class="mapDivisions">
+                        <img src="redlogo.png">
+                        <span>
+                            <h4>Clarity</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate</p>
+                        </span>
+                    </div>
+                    <div class="mapDivisions">
+                        <img src="greenlogo.png">
+                        <span>
+                            <h4>Confidence</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate</p>
+
+                        </span>
+
+                    </div>
+                    <div class="mapDivisions">
+                        <img src="bluelogo.png">
+                        <span>
+                            <h4>Community</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc vulputate</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--reasons to invest-->
+        <div class="portfolioContainer">
+            <div class="portfolioText">
+                <h1>Reason to invest in Cryptocurrency in 2022</h1><br>
+
+                <div class="portfolioPoints">
+                    <div class="portfolioDivisions">
+                        <img src="tick.png">
+                        <span>
+                            <h4>Buying Bitcoin in legal</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                Class aptent taciti sociosqu ad.</p>
+                        </span>
+                    </div>
+                    <div class="portfolioDivisions">
+                        <img src="tick.png">
+                        <span>
+                            <h4>High return potential </h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                Class aptent taciti sociosqu ad.</p>
+
+                        </span>
+
+                    </div>
+                    <div class="portfolioDivisions">
+                        <img src="tick.png">
+                        <span>
+                            <h4>Growing alternative assest class</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
+                                Class aptent taciti sociosqu ad.</p>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lineSection">
+                <img src="lines.png">
+                <div class="floatingDiv">
+                    <h2>Your portfolio is <span style="color:#14FF00">up 2.13%</span></h2>
+                    <div class="tableinfo">
+                        <div class="row">
+                            <img src="bitcoin2.png" style="width:35px">
+                            <span>
+                                <h4>Bitcoin</h4>
+                                <p>BTC</p>
+                            </span>
+                            <div>
+                                <p style="color:#14FF00">1.33%</p><img src="upArrow.png" style="height:17px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="diamond.png" style="width:35px">
+                            <span>
+                                <h4>Ethereum</h4>
+                                <p>ETH</p>
+                            </span>
+                            <div>
+                                <p style="color:#14FF00">2.14%</p><img src="upArrow.png" style="height:17px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="lifecoin.png" style="width:35px">
+                            <span>
+                                <h4>Litecoin</h4>
+                                <p>LTC</p>
+                            </span>
+                            <div>
+                                <p style="color:#14FF00">0.81%</p><img src="upArrow.png" style="height:17px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="bitcoin2.png" style="width:35px">
+                            <span>
+                                <h4>Bitcoin</h4>
+                                <p>BTC</p>
+                            </span>
+                            <div>
+                                <p style="color:#14FF00">1.33%</p><img src="upArrow.png" style="height:17px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="diamond.png" style="width:35px">
+                            <span>
+                                <h4>Ethereum</h4>
+                                <p>ETH</p>
+                            </span>
+                            <div>
+                                <p style="color:#14FF00">2.14%</p><img src="upArrow.png" style="height:17px">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="footerdiv">
+            <div class="section1Footer">
+                <img src="logo.png">
+                <p>CoinIntention's mission is to make investing in cryptocurrencies easy and efficient. CoinIntention
+                    tracks various data of cryptocurrencies and thus offers its users an overview of all
+                    cryptocurrencies available on the market and their performance, market capitalization, trading
+                    volume, etc.</p>
+            </div>
+            <div class="section2Footer">
+                <ul>
+                    <li class="footerheadings">Company</li>
+                    <li>About us</li>
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Commmunity Rules</li>
+                    <li>Disclaimer</li>
+                    <li>Methodology</li>
+                </ul>
+                <ul>
+                    <li class="footerheadings">Support</li>
+                    <li>Requested Form</li>
+                    <li>Contact Support</li>
+                    <li>FAQ's</li>
+                    <li>Glossary</li>
+                </ul>
+                <ul>
+                    <li class="footerheadings">Socials</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                    <li>Telegram</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

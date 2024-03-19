@@ -1,0 +1,399 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+img{max-width: 100%;}
+.mainlogo{
+    width:80%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#12254f;
+    padding:20px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap:20px;
+}
+.list{
+    color:white;
+    font-size: 17px;;
+}
+nav{
+    width:40%;
+}
+.menu{display: none;}
+.sidebar{
+    position:fixed;
+    gap:50px;
+    top:0;
+    right:0;
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    color:black;
+    background-color: rgba(36, 56, 94, 0.5);
+    padding:40px;
+    box-shadow: 30px;
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+.searchGroup{
+    display: flex;
+    gap:30px;
+    flex-direction: row;
+}
+
+.statsSection{
+    display:flex;
+    flex-direction: column;
+    padding: 60px;
+    background-color:#0a1c44;   
+}
+.statstable{
+    display:flex;
+    justify-content: center;
+}
+
+.headingsGroup{
+    gap:20px;
+}
+h3{
+    font-family: "Poppins", sans-serif;
+    color:white;
+    font-weight: 300;
+    font-size:18px;
+}
+table{
+    color:white;
+    width:100%;
+    
+}
+td{
+    padding:15px;
+    text-align: center;
+}
+.nameHeading{
+    text-align: start;
+}
+th{
+    text-align: center;
+    padding:10px;
+}
+tr{
+    gap:50px;
+    
+}
+.firstcolumn{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+}
+.abbrevation{
+    font-weight: 100;
+    visibility: 50%;
+    color: gray;
+    font-size: 15px;
+}
+.buttondiv button{
+    background: linear-gradient(90deg,#3DD8EE,#0997E8);
+    width:200px;
+    height:60px;
+    border-radius: 8px;
+    color:white;
+    font-weight: 700;
+    font-size: 20px;
+    border:none;
+    margin-bottom: 50px;
+   
+   
+}
+.buttondiv{
+    background-color: #0a1c44;
+    display:flex;
+    justify-content: center;
+}
+.mapcontainer{
+    display:flex;
+    background-color: #031131;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:0px;
+    padding:80px;  
+    color:white  
+}
+.mapImage{
+    width:100%;
+}
+.mapText{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap:30px;
+    padding-right:70px;    
+
+}
+h1{font-size:45px;}
+.mapText h4{font-weight: 300;}
+
+.mapPoints{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.mapDivisions{
+    align-items: center;
+    gap:20px;
+    font-weight: 300;
+    display:flex;
+    flex-direction: row;}
+
+.portfolioContainer{
+    background-color: #07183b;
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    gap:0px;
+    padding:80px;  
+    color:white 
+}
+.portfolioText h1{
+    font-size: 33px;
+    margin:20px;
+    font-weight: 600;
+
+}
+.portfolioText{
+    color:white;
+    width:45%;
+    padding:20px;
+
+}
+.portfolioPoints{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.portfolioDivisions{
+    align-items: flex-start;
+    gap:20px;
+    font-weight: 300;
+    display:flex;
+    flex-direction: row;
+    
+}
+.portfolioDivisions h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.portfolioDivisions p{
+    line-height: 1.7;
+    font-size: 14px;
+}
+.lineSection {
+    position: relative;
+    display: flex;
+    
+    flex-grow: 0;
+}
+.floatingDiv{
+    position: absolute;
+    top:20px;
+    right:50px;
+    z-index:90;
+    background-color: rgb(6, 19, 47,0.9);
+    border-radius:50px;
+    border:2px solid rgb(82, 96, 114);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding:30px;
+    width:400px;
+
+}
+.floatingDiv h2{
+    font-weight: 300;
+
+}
+.tableinfo{
+    display:flex;
+    flex-direction: column;
+    color:white;
+    gap:30px;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:40px;
+    align-items: center;
+    
+}
+.row div {
+    display: flex;
+    flex-direction: row;
+}
+.row span {
+    display: flex;
+    flex-direction: column;
+}
+.footerdiv{
+    padding:50px;
+    background-color: #031131;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:30px;
+
+}
+.section1Footer{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:40%;
+    color:white;
+    gap:30px;
+
+}
+.section1Footer p{
+    line-height: 30px;
+    font-size: 20px;
+
+}
+
+.footerheadings{
+    font-size: 24px;
+    font-weight: 500;
+}
+.section2Footer{
+    display: flex;
+    flex-direction: row;
+    gap:70px;
+    color:white
+}
+.section2Footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style-type: none;
+
+}
+
+
+@media only screen and (max-width:600px){
+    .hideInMobile{
+        display:none;
+    }
+    .menu{
+        display:block;
+    }
+    h3{
+        font-size: 16.5px;
+    }
+    .statsSection{padding:17px;}
+    .mapcontainer{
+        flex-direction: column;
+        padding:20px;
+    }
+    .mapText{
+        padding-right: 0;
+        padding:20px;
+    }
+    h1{font-size: 35px;}
+    .portfolioContainer{
+        flex-direction: column;
+        padding:0px;
+        justify-content: center;
+        padding-bottom:200px;
+    }
+    .portfolioText{
+        color:white;
+        width:100%;
+        padding:20px;
+    
+    }
+    .footerdiv{
+        flex-direction: column;
+        gap:50px;
+    
+    }
+    .section1Footer{
+        width:100%;
+    }
+    .abbrevation{
+    
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .hideInMobile{
+        display:none;
+    }
+    .menu{
+        display:block;
+    }
+    .mapcontainer{
+        flex-direction: column;
+        padding:20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .mapText{
+        padding-right: 0;
+        padding:20px;
+    }
+    h1{font-size: 35px;
+    }
+    .footerdiv{
+        flex-direction: column;
+        gap:50px;
+        
+    }
+    .section1Footer{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .mapcontainer{
+        padding:20px;
+        gap:0px;
+    }
+    .mapText{
+        padding-right: 0;
+        padding:20px;
+    }
+    h1{font-size: 35px;
+    }
+    .portfolioContainer{
+        flex-direction: column;
+        padding:0px;
+        justify-content: center;
+        padding-bottom:200px;
+    }
+    .portfolioText{
+        color:white;
+        width:100%;
+        padding:20px;
+    
+    }
+}
+
+
